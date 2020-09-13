@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7716215498677224263}
   - component: {fileID: 5676563291353122491}
   - component: {fileID: 8042851641948154806}
+  - component: {fileID: 777758318}
+  - component: {fileID: 777758317}
   m_Layer: 0
   m_Name: Cone
   m_TagString: Untagged
@@ -81,6 +83,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &777758318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290507136294638826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3613567641014311022, guid: 8a5552136942ea34f8d60afe310eb75a, type: 3}
+--- !u!114 &777758317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290507136294638826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a7d59fc47c3e74e8173d466edec65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossState: {fileID: 8493683062671324654}
 --- !u!1 &290507137646131444
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +283,8 @@ GameObject:
   - component: {fileID: 2676338732778307222}
   - component: {fileID: 3703819252992826594}
   - component: {fileID: 1940327777420448376}
+  - component: {fileID: 1510063468}
+  - component: {fileID: 1510063467}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -324,6 +355,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1510063468
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451569925553564327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 8a5552136942ea34f8d60afe310eb75a, type: 3}
+--- !u!114 &1510063467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451569925553564327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a7d59fc47c3e74e8173d466edec65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossState: {fileID: 8493683062671324654}
 --- !u!1 &5451569925756013684
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +393,8 @@ GameObject:
   - component: {fileID: 2676338732712319045}
   - component: {fileID: 3703819253058812465}
   - component: {fileID: 1940327777618719915}
+  - component: {fileID: 981862009}
+  - component: {fileID: 981862008}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -405,6 +465,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &981862009
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451569925756013684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: c777b57e89ee0f640b20e649e6713421, type: 3}
+--- !u!114 &981862008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451569925756013684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a7d59fc47c3e74e8173d466edec65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossState: {fileID: 8493683062671324654}
 --- !u!1 &5451569926600951481
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +584,8 @@ GameObject:
   - component: {fileID: 2907981742320346246}
   - component: {fileID: 4121236529415133853}
   - component: {fileID: 7816192865529538860}
+  - component: {fileID: 675474881}
+  - component: {fileID: 675474880}
   m_Layer: 0
   m_Name: Cone.001
   m_TagString: Untagged
@@ -567,6 +656,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &675474881
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812287909452636196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6195245291975648998, guid: 8a5552136942ea34f8d60afe310eb75a, type: 3}
+--- !u!114 &675474880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812287909452636196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a7d59fc47c3e74e8173d466edec65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossState: {fileID: 8493683062671324654}
 --- !u!1 &8255825872526438416
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +694,8 @@ GameObject:
   - component: {fileID: 5396976467654000378}
   - component: {fileID: 3681895074418247780}
   - component: {fileID: 5052675925652116667}
+  - component: {fileID: 631955177}
+  - component: {fileID: 631955176}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -648,6 +766,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &631955177
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8255825872526438416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: c777b57e89ee0f640b20e649e6713421, type: 3}
+--- !u!114 &631955176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8255825872526438416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a7d59fc47c3e74e8173d466edec65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossState: {fileID: 8493683062671324654}
 --- !u!1 &8493683061288114678
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,10 +927,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   rotateSpeed: 70
+  weaponActionLst:
+  - {fileID: 11400000, guid: bc12d154a9493324c91f0849b0f07466, type: 2}
+  - {fileID: 11400000, guid: 5f28b184eb5b99e4f836f2edb46238f9, type: 2}
   weaponDelay:
-  - 7
-  - 6.5
-  - 6
+  - 4
+  - 3.5
+  - 3
 --- !u!65 &8493683062671324655
 BoxCollider:
   m_ObjectHideFlags: 0

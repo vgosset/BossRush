@@ -6,11 +6,14 @@ public class BossState : MonoBehaviour
 {
     [SerializeField] private Transform player;
     [SerializeField] private float rotateSpeed;
+    [SerializeField] private List<BossWeaponAction> weaponActionLst;
     [SerializeField] private float[] weaponDelay;
 
     private float weaponTimer = 3.5f;
     private bool rotateOn = true;
+    private bool hasHit = false;
     private int phase_id = 0;
+    private int c_WeaponDmg;
     private Animator anim;
 
     private void Awake()
@@ -41,24 +44,30 @@ public class BossState : MonoBehaviour
     }
     private void WeaponFire()
     {
-        int id = Random.Range(0, 2);
+        int id = Random.Range(0, weaponActionLst.Count);
+        
+        BossWeaponAction action = weaponActionLst[id];
 
-        switch (id)
-        {
-            case 0 :
-            anim.SetTrigger("SpearClassic");
-            break;
-            default :
-            anim.SetTrigger("HammerClassic");
-            break;
-        }
-        weaponTimer = weaponDelay[phase_id];
+        c_WeaponDmg = action.damage;
+        weaponTimer = weaponDelay[phase_id] + action.duration;
+
+        anim.SetTrigger(action.animTrigger);
+        hasHit = false;
     }
     private void RotateToPlayer(float dt)
     {
         Vector3 targetDir = player.position - transform.position;
         targetDir.y = 0.0f;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(targetDir), dt * rotateSpeed);
+    }
+    public void CheckWeaponHit(PlayerLifes l_player)
+    {
+        if (!hasHit)
+        {
+            l_player.GetHit(c_WeaponDmg);
+            hasHit = true;
+            Debug.Log("Hit !");
+        }
     }
     public void SetRotateOn()
     {
